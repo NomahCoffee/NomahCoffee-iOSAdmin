@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		315545372647F8110009C0D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315545362647F8110009C0D1 /* User.swift */; };
+		315546CD264B0E8C0009C0D1 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315546CC264B0E8C0009C0D1 /* UserListViewController.swift */; };
+		318957672636178200CA9839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957662636178200CA9839 /* AppDelegate.swift */; };
+		318957692636178200CA9839 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957682636178200CA9839 /* SceneDelegate.swift */; };
+		318957702636178500CA9839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3189576F2636178500CA9839 /* Assets.xcassets */; };
+		318957732636178500CA9839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318957712636178500CA9839 /* LaunchScreen.storyboard */; };
+		3189578E26361AA300CA9839 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189578D26361AA300CA9839 /* MenuOption.swift */; };
+		3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579526361BC400CA9839 /* MenuTableViewModel.swift */; };
+		3189579926361FC000CA9839 /* CreateSuperuserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579826361FC000CA9839 /* CreateSuperuserViewController.swift */; };
+		3189579C263704F600CA9839 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579B263704F600CA9839 /* NetworkingManager.swift */; };
+		318957E826383A0500CA9839 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957E726383A0500CA9839 /* LoginViewController.swift */; };
+		31895841263A228C00CA9839 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895840263A228C00CA9839 /* MenuView.swift */; };
+		31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895843263C3CD500CA9839 /* MenuViewController.swift */; };
+		31895854263C3F0800CA9839 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895853263C3F0800CA9839 /* LoginView.swift */; };
+		31895858263C3F4500CA9839 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895857263C3F4500CA9839 /* LoginViewModel.swift */; };
+		3189585B263C55F700CA9839 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189585A263C55F600CA9839 /* LoginConstants.swift */; };
+		31895863263CA85200CA9839 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895862263CA85200CA9839 /* LoginError.swift */; };
+		3189586C263CAD9300CA9839 /* CreateSuperuserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189586B263CAD9300CA9839 /* CreateSuperuserView.swift */; };
+		31895873263CAF9000CA9839 /* CreateSuperuserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895872263CAF9000CA9839 /* CreateSuperuserError.swift */; };
+		31895877263CB3D300CA9839 /* CreateSuperuserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895876263CB3D300CA9839 /* CreateSuperuserViewModel.swift */; };
+		3189587C263CDA4D00CA9839 /* CreateSuperuserConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189587B263CDA4D00CA9839 /* CreateSuperuserConstants.swift */; };
+		A5C6779D5C01E7F172C4AC37 /* Pods_NomahCoffee_iOSAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12CD6CEB8BD47A9B2F26954D /* Pods-NomahCoffee-iOSAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomahCoffee-iOSAdmin.release.xcconfig"; path = "Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		315545362647F8110009C0D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		315546CC264B0E8C0009C0D1 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		318957632636178200CA9839 /* NomahCoffee-iOSAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NomahCoffee-iOSAdmin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		318957662636178200CA9839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		318957682636178200CA9839 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3189576F2636178500CA9839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		318957722636178500CA9839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		318957742636178500CA9839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3189578D26361AA300CA9839 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		3189579526361BC400CA9839 /* MenuTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewModel.swift; sourceTree = "<group>"; };
+		3189579826361FC000CA9839 /* CreateSuperuserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserViewController.swift; sourceTree = "<group>"; };
+		3189579B263704F600CA9839 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		318957E726383A0500CA9839 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		31895840263A228C00CA9839 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		31895843263C3CD500CA9839 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		31895853263C3F0800CA9839 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31895857263C3F4500CA9839 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3189585A263C55F600CA9839 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
+		31895862263CA85200CA9839 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		3189586B263CAD9300CA9839 /* CreateSuperuserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserView.swift; sourceTree = "<group>"; };
+		31895872263CAF9000CA9839 /* CreateSuperuserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserError.swift; sourceTree = "<group>"; };
+		31895876263CB3D300CA9839 /* CreateSuperuserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserViewModel.swift; sourceTree = "<group>"; };
+		3189587B263CDA4D00CA9839 /* CreateSuperuserConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserConstants.swift; sourceTree = "<group>"; };
+		8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomahCoffee_iOSAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE58CF0B00053A03AFBC05E /* Pods-NomahCoffee-iOSAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomahCoffee-iOSAdmin.debug.xcconfig"; path = "Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		318957602636178200CA9839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C6779D5C01E7F172C4AC37 /* Pods_NomahCoffee_iOSAdmin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6956A9D1B1BE54CB018234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3189575A2636178200CA9839 = {
+			isa = PBXGroup;
+			children = (
+				318957652636178200CA9839 /* NomahCoffee-iOSAdmin */,
+				318957642636178200CA9839 /* Products */,
+				7D18F0D9740320E48F596D29 /* Pods */,
+				0C6956A9D1B1BE54CB018234 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		318957642636178200CA9839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318957632636178200CA9839 /* NomahCoffee-iOSAdmin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		318957652636178200CA9839 /* NomahCoffee-iOSAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				3189584B263C3DAA00CA9839 /* Login */,
+				31895847263C3D4300CA9839 /* Menu */,
+				318957662636178200CA9839 /* AppDelegate.swift */,
+				318957682636178200CA9839 /* SceneDelegate.swift */,
+				3189576F2636178500CA9839 /* Assets.xcassets */,
+				318957712636178500CA9839 /* LaunchScreen.storyboard */,
+				318957742636178500CA9839 /* Info.plist */,
+				3189579B263704F600CA9839 /* NetworkingManager.swift */,
+				315545362647F8110009C0D1 /* User.swift */,
+			);
+			path = "NomahCoffee-iOSAdmin";
+			sourceTree = "<group>";
+		};
+		31895847263C3D4300CA9839 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3189586A263CAD2F00CA9839 /* MainMenu */,
+				31895865263CACF300CA9839 /* CreateSuperuser */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		31895848263C3D6400CA9839 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		31895849263C3D7400CA9839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31895840263A228C00CA9839 /* MenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3189584A263C3D9600CA9839 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3189578D26361AA300CA9839 /* MenuOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3189584B263C3DAA00CA9839 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				318957E726383A0500CA9839 /* LoginViewController.swift */,
+				3189584F263C3E9F00CA9839 /* Views */,
+				31895850263C3EA500CA9839 /* ViewModels */,
+				31895851263C3EAF00CA9839 /* Models */,
+				31895852263C3EB700CA9839 /* Constants */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3189584D263C3DEA00CA9839 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3189579526361BC400CA9839 /* MenuTableViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3189584F263C3E9F00CA9839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31895853263C3F0800CA9839 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31895850263C3EA500CA9839 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				31895857263C3F4500CA9839 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31895851263C3EAF00CA9839 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31895862263CA85200CA9839 /* LoginError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31895852263C3EB700CA9839 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3189585A263C55F600CA9839 /* LoginConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		31895865263CACF300CA9839 /* CreateSuperuser */ = {
+			isa = PBXGroup;
+			children = (
+				3189579826361FC000CA9839 /* CreateSuperuserViewController.swift */,
+				31895869263CAD1800CA9839 /* Views */,
+				31895868263CAD1600CA9839 /* ViewModels */,
+				31895867263CAD1400CA9839 /* Models */,
+				31895866263CAD1200CA9839 /* Constants */,
+			);
+			path = CreateSuperuser;
+			sourceTree = "<group>";
+		};
+		31895866263CAD1200CA9839 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3189587B263CDA4D00CA9839 /* CreateSuperuserConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		31895867263CAD1400CA9839 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31895872263CAF9000CA9839 /* CreateSuperuserError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31895868263CAD1600CA9839 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				31895876263CB3D300CA9839 /* CreateSuperuserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31895869263CAD1800CA9839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3189586B263CAD9300CA9839 /* CreateSuperuserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3189586A263CAD2F00CA9839 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				31895843263C3CD500CA9839 /* MenuViewController.swift */,
+				315546CC264B0E8C0009C0D1 /* UserListViewController.swift */,
+				31895849263C3D7400CA9839 /* Views */,
+				3189584D263C3DEA00CA9839 /* ViewModels */,
+				3189584A263C3D9600CA9839 /* Models */,
+				31895848263C3D6400CA9839 /* Constants */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		7D18F0D9740320E48F596D29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE58CF0B00053A03AFBC05E /* Pods-NomahCoffee-iOSAdmin.debug.xcconfig */,
+				12CD6CEB8BD47A9B2F26954D /* Pods-NomahCoffee-iOSAdmin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		318957622636178200CA9839 /* NomahCoffee-iOSAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318957772636178500CA9839 /* Build configuration list for PBXNativeTarget "NomahCoffee-iOSAdmin" */;
+			buildPhases = (
+				D9AD0AE6A40954D3DE44654F /* [CP] Check Pods Manifest.lock */,
+				3189575F2636178200CA9839 /* Sources */,
+				318957602636178200CA9839 /* Frameworks */,
+				318957612636178200CA9839 /* Resources */,
+				48362BA0BC492108DE9C8421 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NomahCoffee-iOSAdmin";
+			productName = "NomahCoffee-iOSAdmin";
+			productReference = 318957632636178200CA9839 /* NomahCoffee-iOSAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3189575B2636178200CA9839 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					318957622636178200CA9839 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 3189575E2636178200CA9839 /* Build configuration list for PBXProject "NomahCoffee-iOSAdmin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3189575A2636178200CA9839;
+			productRefGroup = 318957642636178200CA9839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				318957622636178200CA9839 /* NomahCoffee-iOSAdmin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		318957612636178200CA9839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318957732636178500CA9839 /* LaunchScreen.storyboard in Resources */,
+				318957702636178500CA9839 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48362BA0BC492108DE9C8421 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AD0AE6A40954D3DE44654F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NomahCoffee-iOSAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3189575F2636178200CA9839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3189585B263C55F700CA9839 /* LoginConstants.swift in Sources */,
+				318957E826383A0500CA9839 /* LoginViewController.swift in Sources */,
+				31895863263CA85200CA9839 /* LoginError.swift in Sources */,
+				3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */,
+				315546CD264B0E8C0009C0D1 /* UserListViewController.swift in Sources */,
+				31895858263C3F4500CA9839 /* LoginViewModel.swift in Sources */,
+				3189586C263CAD9300CA9839 /* CreateSuperuserView.swift in Sources */,
+				3189578E26361AA300CA9839 /* MenuOption.swift in Sources */,
+				31895877263CB3D300CA9839 /* CreateSuperuserViewModel.swift in Sources */,
+				31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */,
+				3189587C263CDA4D00CA9839 /* CreateSuperuserConstants.swift in Sources */,
+				31895841263A228C00CA9839 /* MenuView.swift in Sources */,
+				31895873263CAF9000CA9839 /* CreateSuperuserError.swift in Sources */,
+				3189579926361FC000CA9839 /* CreateSuperuserViewController.swift in Sources */,
+				3189579C263704F600CA9839 /* NetworkingManager.swift in Sources */,
+				315545372647F8110009C0D1 /* User.swift in Sources */,
+				318957672636178200CA9839 /* AppDelegate.swift in Sources */,
+				31895854263C3F0800CA9839 /* LoginView.swift in Sources */,
+				318957692636178200CA9839 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		318957712636178500CA9839 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				318957722636178500CA9839 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		318957752636178500CA9839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		318957762636178500CA9839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		318957782636178500CA9839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE58CF0B00053A03AFBC05E /* Pods-NomahCoffee-iOSAdmin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92DETN2MKQ;
+				INFOPLIST_FILE = "NomahCoffee-iOSAdmin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebrudnicki.NomahCoffee-iOSAdmin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		318957792636178500CA9839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CD6CEB8BD47A9B2F26954D /* Pods-NomahCoffee-iOSAdmin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92DETN2MKQ;
+				INFOPLIST_FILE = "NomahCoffee-iOSAdmin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebrudnicki.NomahCoffee-iOSAdmin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3189575E2636178200CA9839 /* Build configuration list for PBXProject "NomahCoffee-iOSAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318957752636178500CA9839 /* Debug */,
+				318957762636178500CA9839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318957772636178500CA9839 /* Build configuration list for PBXNativeTarget "NomahCoffee-iOSAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318957782636178500CA9839 /* Debug */,
+				318957792636178500CA9839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3189575B2636178200CA9839 /* Project object */;
+}
