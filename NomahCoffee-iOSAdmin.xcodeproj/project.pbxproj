@@ -9,25 +9,40 @@
 /* Begin PBXBuildFile section */
 		315545372647F8110009C0D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315545362647F8110009C0D1 /* User.swift */; };
 		315546CD264B0E8C0009C0D1 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315546CC264B0E8C0009C0D1 /* UserListViewController.swift */; };
+		315B1F4A2683E79D002832DE /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F492683E79C002832DE /* UserListView.swift */; };
+		315B1F4C2683E7C9002832DE /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F4B2683E7C9002832DE /* UserListViewModel.swift */; };
+		315B1F4F2684B755002832DE /* UserEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F4E2684B755002832DE /* UserEditorViewController.swift */; };
+		315B1F512684B7B5002832DE /* UserEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F502684B7B5002832DE /* UserEditorView.swift */; };
+		315B1F552684B8CE002832DE /* UserEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F542684B8CE002832DE /* UserEditorViewModel.swift */; };
+		315B1F572684C966002832DE /* UserEditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F562684C966002832DE /* UserEditorError.swift */; };
+		315B1F592684CA47002832DE /* UserEditorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F582684CA47002832DE /* UserEditorConstants.swift */; };
+		315B1F5F2684CB21002832DE /* UserEditorActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F5E2684CB21002832DE /* UserEditorActionType.swift */; };
+		315B1F622684E650002832DE /* NCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F612684E650002832DE /* NCTextField.swift */; };
+		315B1F642684EA7E002832DE /* NCEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F632684EA7E002832DE /* NCEmailTextField.swift */; };
+		315B1F662684EF99002832DE /* NCPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F652684EF99002832DE /* NCPasswordTextField.swift */; };
+		315B1F6A2684FB1F002832DE /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F692684FB1F002832DE /* ProductListViewController.swift */; };
+		315B1F6C2684FBB6002832DE /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F6B2684FBB6002832DE /* ProductListView.swift */; };
+		315B1F6E2684FC03002832DE /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F6D2684FC03002832DE /* ProductListViewModel.swift */; };
+		315B1F732684FF9A002832DE /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F722684FF9A002832DE /* UserType.swift */; };
+		315B1F7526851223002832DE /* MenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F7426851223002832DE /* MenuConstants.swift */; };
+		315B1F7A26851909002832DE /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F7926851909002832DE /* ProductType.swift */; };
+		315B1F7F26853C2D002832DE /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F7E26853C2D002832DE /* UserList.swift */; };
+		315B1F8226853C4C002832DE /* CoffeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F8126853C4C002832DE /* CoffeeList.swift */; };
+		315B1F8426853C6E002832DE /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F8326853C6E002832DE /* Coffee.swift */; };
+		315B1F8626853C95002832DE /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F8526853C95002832DE /* CartItem.swift */; };
 		318957672636178200CA9839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957662636178200CA9839 /* AppDelegate.swift */; };
 		318957692636178200CA9839 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957682636178200CA9839 /* SceneDelegate.swift */; };
 		318957702636178500CA9839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3189576F2636178500CA9839 /* Assets.xcassets */; };
 		318957732636178500CA9839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318957712636178500CA9839 /* LaunchScreen.storyboard */; };
 		3189578E26361AA300CA9839 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189578D26361AA300CA9839 /* MenuOption.swift */; };
 		3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579526361BC400CA9839 /* MenuTableViewModel.swift */; };
-		3189579926361FC000CA9839 /* CreateSuperuserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579826361FC000CA9839 /* CreateSuperuserViewController.swift */; };
 		3189579C263704F600CA9839 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579B263704F600CA9839 /* NetworkingManager.swift */; };
 		318957E826383A0500CA9839 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957E726383A0500CA9839 /* LoginViewController.swift */; };
 		31895841263A228C00CA9839 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895840263A228C00CA9839 /* MenuView.swift */; };
 		31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895843263C3CD500CA9839 /* MenuViewController.swift */; };
 		31895854263C3F0800CA9839 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895853263C3F0800CA9839 /* LoginView.swift */; };
-		31895858263C3F4500CA9839 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895857263C3F4500CA9839 /* LoginViewModel.swift */; };
 		3189585B263C55F700CA9839 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189585A263C55F600CA9839 /* LoginConstants.swift */; };
 		31895863263CA85200CA9839 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895862263CA85200CA9839 /* LoginError.swift */; };
-		3189586C263CAD9300CA9839 /* CreateSuperuserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189586B263CAD9300CA9839 /* CreateSuperuserView.swift */; };
-		31895873263CAF9000CA9839 /* CreateSuperuserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895872263CAF9000CA9839 /* CreateSuperuserError.swift */; };
-		31895877263CB3D300CA9839 /* CreateSuperuserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895876263CB3D300CA9839 /* CreateSuperuserViewModel.swift */; };
-		3189587C263CDA4D00CA9839 /* CreateSuperuserConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189587B263CDA4D00CA9839 /* CreateSuperuserConstants.swift */; };
 		A5C6779D5C01E7F172C4AC37 /* Pods_NomahCoffee_iOSAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +50,27 @@
 		12CD6CEB8BD47A9B2F26954D /* Pods-NomahCoffee-iOSAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomahCoffee-iOSAdmin.release.xcconfig"; path = "Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		315545362647F8110009C0D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		315546CC264B0E8C0009C0D1 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		315B1F492683E79C002832DE /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		315B1F4B2683E7C9002832DE /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		315B1F4E2684B755002832DE /* UserEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorViewController.swift; sourceTree = "<group>"; };
+		315B1F502684B7B5002832DE /* UserEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorView.swift; sourceTree = "<group>"; };
+		315B1F542684B8CE002832DE /* UserEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorViewModel.swift; sourceTree = "<group>"; };
+		315B1F562684C966002832DE /* UserEditorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorError.swift; sourceTree = "<group>"; };
+		315B1F582684CA47002832DE /* UserEditorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorConstants.swift; sourceTree = "<group>"; };
+		315B1F5E2684CB21002832DE /* UserEditorActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorActionType.swift; sourceTree = "<group>"; };
+		315B1F612684E650002832DE /* NCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTextField.swift; sourceTree = "<group>"; };
+		315B1F632684EA7E002832DE /* NCEmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCEmailTextField.swift; sourceTree = "<group>"; };
+		315B1F652684EF99002832DE /* NCPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPasswordTextField.swift; sourceTree = "<group>"; };
+		315B1F692684FB1F002832DE /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		315B1F6B2684FBB6002832DE /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		315B1F6D2684FC03002832DE /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		315B1F722684FF9A002832DE /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		315B1F7426851223002832DE /* MenuConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuConstants.swift; sourceTree = "<group>"; };
+		315B1F7926851909002832DE /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
+		315B1F7E26853C2D002832DE /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		315B1F8126853C4C002832DE /* CoffeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeList.swift; sourceTree = "<group>"; };
+		315B1F8326853C6E002832DE /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		315B1F8526853C95002832DE /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		318957632636178200CA9839 /* NomahCoffee-iOSAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NomahCoffee-iOSAdmin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		318957662636178200CA9839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318957682636178200CA9839 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,19 +79,13 @@
 		318957742636178500CA9839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3189578D26361AA300CA9839 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		3189579526361BC400CA9839 /* MenuTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewModel.swift; sourceTree = "<group>"; };
-		3189579826361FC000CA9839 /* CreateSuperuserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserViewController.swift; sourceTree = "<group>"; };
 		3189579B263704F600CA9839 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		318957E726383A0500CA9839 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31895840263A228C00CA9839 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		31895843263C3CD500CA9839 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		31895853263C3F0800CA9839 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		31895857263C3F4500CA9839 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3189585A263C55F600CA9839 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
 		31895862263CA85200CA9839 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
-		3189586B263CAD9300CA9839 /* CreateSuperuserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserView.swift; sourceTree = "<group>"; };
-		31895872263CAF9000CA9839 /* CreateSuperuserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserError.swift; sourceTree = "<group>"; };
-		31895876263CB3D300CA9839 /* CreateSuperuserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserViewModel.swift; sourceTree = "<group>"; };
-		3189587B263CDA4D00CA9839 /* CreateSuperuserConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSuperuserConstants.swift; sourceTree = "<group>"; };
 		8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomahCoffee_iOSAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE58CF0B00053A03AFBC05E /* Pods-NomahCoffee-iOSAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomahCoffee-iOSAdmin.debug.xcconfig"; path = "Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +110,143 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		315B1F4D2684B731002832DE /* UserEditor */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F4E2684B755002832DE /* UserEditorViewController.swift */,
+				315B1F5A2684CAC8002832DE /* Views */,
+				315B1F5B2684CACF002832DE /* ViewModels */,
+				315B1F5C2684CAE0002832DE /* Models */,
+				315B1F5D2684CAE4002832DE /* Constants */,
+			);
+			path = UserEditor;
+			sourceTree = "<group>";
+		};
+		315B1F5A2684CAC8002832DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F502684B7B5002832DE /* UserEditorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		315B1F5B2684CACF002832DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F542684B8CE002832DE /* UserEditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		315B1F5C2684CAE0002832DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F562684C966002832DE /* UserEditorError.swift */,
+				315B1F5E2684CB21002832DE /* UserEditorActionType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		315B1F5D2684CAE4002832DE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F582684CA47002832DE /* UserEditorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		315B1F602684E62F002832DE /* NCUtils */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F612684E650002832DE /* NCTextField.swift */,
+				315B1F632684EA7E002832DE /* NCEmailTextField.swift */,
+				315B1F652684EF99002832DE /* NCPasswordTextField.swift */,
+			);
+			path = NCUtils;
+			sourceTree = "<group>";
+		};
+		315B1F672684F96C002832DE /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				315546CC264B0E8C0009C0D1 /* UserListViewController.swift */,
+				315B1F6F2684FF57002832DE /* Views */,
+				315B1F702684FF62002832DE /* ViewModels */,
+				315B1F712684FF7B002832DE /* Models */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		315B1F682684FAC3002832DE /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F692684FB1F002832DE /* ProductListViewController.swift */,
+				315B1F76268518C0002832DE /* Views */,
+				315B1F77268518CE002832DE /* ViewModels */,
+				315B1F78268518EC002832DE /* Models */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		315B1F6F2684FF57002832DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F492683E79C002832DE /* UserListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		315B1F702684FF62002832DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F4B2683E7C9002832DE /* UserListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		315B1F712684FF7B002832DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F722684FF9A002832DE /* UserType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		315B1F76268518C0002832DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F6B2684FBB6002832DE /* ProductListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		315B1F77268518CE002832DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F6D2684FC03002832DE /* ProductListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		315B1F78268518EC002832DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F7926851909002832DE /* ProductType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		315B1F7D26853C1C002832DE /* AppModels */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F7E26853C2D002832DE /* UserList.swift */,
+				315545362647F8110009C0D1 /* User.swift */,
+				315B1F8126853C4C002832DE /* CoffeeList.swift */,
+				315B1F8326853C6E002832DE /* Coffee.swift */,
+				315B1F8526853C95002832DE /* CartItem.swift */,
+			);
+			path = AppModels;
+			sourceTree = "<group>";
+		};
 		3189575A2636178200CA9839 = {
 			isa = PBXGroup;
 			children = (
@@ -101,15 +268,16 @@
 		318957652636178200CA9839 /* NomahCoffee-iOSAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				3189584B263C3DAA00CA9839 /* Login */,
-				31895847263C3D4300CA9839 /* Menu */,
 				318957662636178200CA9839 /* AppDelegate.swift */,
 				318957682636178200CA9839 /* SceneDelegate.swift */,
 				3189576F2636178500CA9839 /* Assets.xcassets */,
 				318957712636178500CA9839 /* LaunchScreen.storyboard */,
 				318957742636178500CA9839 /* Info.plist */,
 				3189579B263704F600CA9839 /* NetworkingManager.swift */,
-				315545362647F8110009C0D1 /* User.swift */,
+				315B1F7D26853C1C002832DE /* AppModels */,
+				3189584B263C3DAA00CA9839 /* Login */,
+				31895847263C3D4300CA9839 /* Menu */,
+				315B1F602684E62F002832DE /* NCUtils */,
 			);
 			path = "NomahCoffee-iOSAdmin";
 			sourceTree = "<group>";
@@ -118,7 +286,9 @@
 			isa = PBXGroup;
 			children = (
 				3189586A263CAD2F00CA9839 /* MainMenu */,
-				31895865263CACF300CA9839 /* CreateSuperuser */,
+				315B1F4D2684B731002832DE /* UserEditor */,
+				315B1F672684F96C002832DE /* UserList */,
+				315B1F682684FAC3002832DE /* ProductList */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -126,6 +296,7 @@
 		31895848263C3D6400CA9839 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				315B1F7426851223002832DE /* MenuConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -151,7 +322,6 @@
 			children = (
 				318957E726383A0500CA9839 /* LoginViewController.swift */,
 				3189584F263C3E9F00CA9839 /* Views */,
-				31895850263C3EA500CA9839 /* ViewModels */,
 				31895851263C3EAF00CA9839 /* Models */,
 				31895852263C3EB700CA9839 /* Constants */,
 			);
@@ -174,14 +344,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		31895850263C3EA500CA9839 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				31895857263C3F4500CA9839 /* LoginViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		31895851263C3EAF00CA9839 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,55 +360,10 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		31895865263CACF300CA9839 /* CreateSuperuser */ = {
-			isa = PBXGroup;
-			children = (
-				3189579826361FC000CA9839 /* CreateSuperuserViewController.swift */,
-				31895869263CAD1800CA9839 /* Views */,
-				31895868263CAD1600CA9839 /* ViewModels */,
-				31895867263CAD1400CA9839 /* Models */,
-				31895866263CAD1200CA9839 /* Constants */,
-			);
-			path = CreateSuperuser;
-			sourceTree = "<group>";
-		};
-		31895866263CAD1200CA9839 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				3189587B263CDA4D00CA9839 /* CreateSuperuserConstants.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		31895867263CAD1400CA9839 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				31895872263CAF9000CA9839 /* CreateSuperuserError.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		31895868263CAD1600CA9839 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				31895876263CB3D300CA9839 /* CreateSuperuserViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		31895869263CAD1800CA9839 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3189586B263CAD9300CA9839 /* CreateSuperuserView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		3189586A263CAD2F00CA9839 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
 				31895843263C3CD500CA9839 /* MenuViewController.swift */,
-				315546CC264B0E8C0009C0D1 /* UserListViewController.swift */,
 				31895849263C3D7400CA9839 /* Views */,
 				3189584D263C3DEA00CA9839 /* ViewModels */,
 				3189584A263C3D9600CA9839 /* Models */,
@@ -377,22 +494,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315B1F512684B7B5002832DE /* UserEditorView.swift in Sources */,
 				3189585B263C55F700CA9839 /* LoginConstants.swift in Sources */,
+				315B1F732684FF9A002832DE /* UserType.swift in Sources */,
+				315B1F6A2684FB1F002832DE /* ProductListViewController.swift in Sources */,
+				315B1F4C2683E7C9002832DE /* UserListViewModel.swift in Sources */,
+				315B1F7A26851909002832DE /* ProductType.swift in Sources */,
+				315B1F592684CA47002832DE /* UserEditorConstants.swift in Sources */,
 				318957E826383A0500CA9839 /* LoginViewController.swift in Sources */,
 				31895863263CA85200CA9839 /* LoginError.swift in Sources */,
+				315B1F7F26853C2D002832DE /* UserList.swift in Sources */,
 				3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */,
 				315546CD264B0E8C0009C0D1 /* UserListViewController.swift in Sources */,
-				31895858263C3F4500CA9839 /* LoginViewModel.swift in Sources */,
-				3189586C263CAD9300CA9839 /* CreateSuperuserView.swift in Sources */,
+				315B1F8626853C95002832DE /* CartItem.swift in Sources */,
+				315B1F4F2684B755002832DE /* UserEditorViewController.swift in Sources */,
+				315B1F5F2684CB21002832DE /* UserEditorActionType.swift in Sources */,
+				315B1F642684EA7E002832DE /* NCEmailTextField.swift in Sources */,
+				315B1F8226853C4C002832DE /* CoffeeList.swift in Sources */,
+				315B1F622684E650002832DE /* NCTextField.swift in Sources */,
+				315B1F4A2683E79D002832DE /* UserListView.swift in Sources */,
+				315B1F6E2684FC03002832DE /* ProductListViewModel.swift in Sources */,
+				315B1F572684C966002832DE /* UserEditorError.swift in Sources */,
 				3189578E26361AA300CA9839 /* MenuOption.swift in Sources */,
-				31895877263CB3D300CA9839 /* CreateSuperuserViewModel.swift in Sources */,
 				31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */,
-				3189587C263CDA4D00CA9839 /* CreateSuperuserConstants.swift in Sources */,
 				31895841263A228C00CA9839 /* MenuView.swift in Sources */,
-				31895873263CAF9000CA9839 /* CreateSuperuserError.swift in Sources */,
-				3189579926361FC000CA9839 /* CreateSuperuserViewController.swift in Sources */,
+				315B1F8426853C6E002832DE /* Coffee.swift in Sources */,
+				315B1F662684EF99002832DE /* NCPasswordTextField.swift in Sources */,
+				315B1F552684B8CE002832DE /* UserEditorViewModel.swift in Sources */,
 				3189579C263704F600CA9839 /* NetworkingManager.swift in Sources */,
 				315545372647F8110009C0D1 /* User.swift in Sources */,
+				315B1F6C2684FBB6002832DE /* ProductListView.swift in Sources */,
+				315B1F7526851223002832DE /* MenuConstants.swift in Sources */,
 				318957672636178200CA9839 /* AppDelegate.swift in Sources */,
 				31895854263C3F0800CA9839 /* LoginView.swift in Sources */,
 				318957692636178200CA9839 /* SceneDelegate.swift in Sources */,

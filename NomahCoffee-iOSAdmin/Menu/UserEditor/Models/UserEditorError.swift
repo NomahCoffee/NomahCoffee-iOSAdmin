@@ -1,13 +1,13 @@
 //
-//  CreateSuperuserError.swift
+//  UserEditorError.swift
 //  NomahCoffee-iOSAdmin
 //
-//  Created by Caleb Rudnicki on 4/30/21.
+//  Created by Caleb Rudnicki on 6/24/21.
 //
 
 import Foundation
 
-enum CreateSuperuserError {
+enum UserEditorError {
     
     case missingEmail
     case missingUsername
@@ -16,7 +16,9 @@ enum CreateSuperuserError {
     case missingPassword
     case missingRepassword
     case missingPhoneNumber
+    case generic
     
+    /// Title of the error to be shown in a modal
     var errorTitle: String {
         switch self {
         case .missingEmail:
@@ -33,14 +35,19 @@ enum CreateSuperuserError {
             return "Missing password"
         case .missingPhoneNumber:
             return "Missing phone number"
+        case .generic:
+            return "Something went wrong"
         }
     }
     
+    /// Message of the error to be shown in a modal
     var errorMessage: String? {
         switch self {
         case .missingEmail, .missingUsername, .missingFirstName, .missingLastName,
              .missingPassword, .missingRepassword, .missingPhoneNumber:
             return nil
+        case .generic:
+            return "Make sure all fields are entered correctly"
         }
     }
     

@@ -9,7 +9,14 @@ import UIKit
 import SnapKit
 
 protocol LoginViewDelegate {
-    func loginButtonTapped(email: String, password: String)
+    /// Trigger a login action
+    /// - Parameters:
+    ///   - email: a `String` for the user's email
+    ///   - password: a `String` for the user's password
+    func login(email: String, password: String)
+    
+    /// Trigger an error message
+    /// - Parameter error: a `LoginError` object representing the specific error to trigger
     func errorFound(_ error: LoginError)
 }
 
@@ -19,38 +26,30 @@ class LoginView: UIView {
     
     var delegate: LoginViewDelegate?
     
-    var viewModel: LoginViewModel? {
-        didSet {
-            titleLabel.text = viewModel?.titleLabelTitle
-            emailTextField.placeholder = viewModel?.emailTextFieldPlaceholder
-            passwordTextField.placeholder = viewModel?.passwordTextFieldPlaceholder
-            loginButton.titleLabel?.text = viewModel?.loginButtonTitle
-        }
-    }
-    
     private let titleLabel: UILabel = {
         let titleLabel = UILabel()
+        titleLabel.text = LoginConstants.titleLabelTitle
         return titleLabel
     }()
     
-    private let emailTextField: UITextField = {
-        let emailTextField = UITextField()
-        emailTextField.keyboardType = .emailAddress
-        emailTextField.autocapitalizationType = .none
+    private let emailTextField: NCEmailTextField = {
+        let emailTextField = NCEmailTextField()
+        emailTextField.placeholder = LoginConstants.emailTextFieldPlaceholder
         return emailTextField
     }()
     
-    private let passwordTextField: UITextField = {
-        let passwordTextField = UITextField()
-        passwordTextField.autocapitalizationType = .none
-        passwordTextField.isSecureTextEntry = true
+    private let passwordTextField: NCPasswordTextField = {
+        let passwordTextField = NCPasswordTextField()
+        passwordTextField.placeholder = LoginConstants.passwordTextFieldPlaceholder
         return passwordTextField
     }()
     
     private let loginButton: UIButton = {
         let loginButton = UIButton()
-        loginButton.backgroundColor = .red
+        loginButton.setTitle(LoginConstants.loginButtonTitle, for: .normal)
+        loginButton.setTitleColor(.label, for: .normal)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        loginButton.backgroundColor = .systemGreen
         return loginButton
     }()
     
@@ -69,11 +68,19 @@ class LoginView: UIView {
         stack.addArrangedSubview(titleLabel)
         stack.addArrangedSubview(emailTextField)
         stack.addArrangedSubview(passwordTextField)
-        stack.addArrangedSubview(loginButton)
+
         addSubview(stack)
+        addSubview(loginButton)
         
         stack.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(LoginConstants.stackHorizontalInset)
+        }
+        
+        loginButton.snp.makeConstraints { make in
+            make.top.greaterThanOrEqualTo(stack.snp.bottom)
+            make.leading.trailing.bottom.equalToSuperview()
+            make.height.equalTo(LoginConstants.loginButtonHeight)
         }
     }
     
@@ -83,21 +90,21 @@ class LoginView: UIView {
     
     // MARK: Actions
     
-    @objc private func loginButtonTapped() {
-        guard let email = emailTextField.text, email != "" else {
-            delegate?.errorFound(.missingEmail)
-            return
+    @objc private func loginButtonTapped() {        
+        if emailTextField.isFulfilled,
+           passwordTextField.isFulfilled,
+           let email = emailTextField.text,
+           let password = passwordTextField.text {
+            delegate?.login(email: email, password: password)
+        } else {
+            delegate?.errorFound(.generic)
         }
-        
-        guard let password = passwordTextField.text, password != "" else {
-            delegate?.errorFound(.missingPassword)
-            return
-        }
-        
-        delegate?.loginButtonTapped(email: email, password: password)
     }
     
-    func clearTextFields() {
+    // MARK: Public Functions
+    
+    /// Clear all text fields associated with the login view
+    public func clearTextFields() {
         emailTextField.text = nil
         passwordTextField.text = nil
     }

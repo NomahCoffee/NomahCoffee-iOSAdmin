@@ -1,26 +1,25 @@
 //
-//  MenuView.swift
+//  UserListView.swift
 //  NomahCoffee-iOSAdmin
 //
-//  Created by Caleb Rudnicki on 4/28/21.
+//  Created by Caleb Rudnicki on 6/23/21.
 //
 
 import UIKit
-import SnapKit
 
-protocol MenuViewDelegate {
+protocol UserListViewDelegate {
     /// Trigger the navigation controller to push a new view controller
     /// - Parameter viewController: the `UIViewController` to push onto the stack
     func push(viewController: UIViewController)
 }
 
-class MenuView: UIView, UITableViewDataSource, UITableViewDelegate {
+class UserListView: UIView, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: Properties
     
-    var delegate: MenuViewDelegate?
+    var delegate: UserListViewDelegate?
     
-    private var viewModel: MenuTableViewModel {
+    var viewModel: UserListViewModel? {
         didSet {
             tableView.reloadData()
         }
@@ -36,13 +35,10 @@ class MenuView: UIView, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: Init
     
-    init(viewModel: MenuTableViewModel) {
-        self.viewModel = viewModel
-        
+    init() {
         super.init(frame: .zero)
         
         addSubview(tableView)
-        
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -55,20 +51,22 @@ class MenuView: UIView, UITableViewDataSource, UITableViewDelegate {
     // MARK: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.menuOptions.count
+        return viewModel?.users.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        cell.textLabel?.text = viewModel.menuOptions[indexPath.row].title
+        cell.textLabel?.text = viewModel?.users[indexPath.row].username
         return cell
     }
     
     // MARK: UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let user = viewModel?.users[indexPath.row] else { return }
         tableView.deselectRow(at: indexPath, animated: true)
-        delegate?.push(viewController: viewModel.menuOptions[indexPath.row].detailController)
+        let userEditorViewController = UserEditorViewController(actionType: .editOther(user: user))
+        delegate?.push(viewController: userEditorViewController)
     }
 
 }

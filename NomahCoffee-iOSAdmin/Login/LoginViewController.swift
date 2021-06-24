@@ -12,9 +12,8 @@ class LoginViewController: UIViewController, LoginViewDelegate {
     
     // MARK: Properties
     
-    lazy var loginView: LoginView = {
+    lazy private var loginView: LoginView = {
         let loginView = LoginView()
-        loginView.viewModel = LoginViewModel()
         loginView.delegate = self
         return loginView
     }()
@@ -25,41 +24,17 @@ class LoginViewController: UIViewController, LoginViewDelegate {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
-        
         view.addSubview(loginView)
+        
         loginView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.trailing.equalToSuperview().inset(8)
+            make.edges.equalToSuperview()
         }
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        NetworkingManager.getGear(completion: {
-            print("got gear")
-        })
-    }
-    
-//    @objc func loginButtonTapped() {
-//        NetworkingManager().login(with: emailTextField.text ?? "", password: passwordTextField.text ?? "", completion: { authToken, error in
-//            if error != nil {
-//                // TODO: Present error to user
-//                print(error?.localizedDescription)
-//                return
-//            }
-//
-//            UserDefaults().set(authToken, forKey: "authToken")
-//            let navigationController = UINavigationController(rootViewController: MenuViewController())
-//            navigationController.modalPresentationStyle = .fullScreen
-//            self.present(navigationController, animated: true, completion: nil)
-//        })
-//    }
-    
     // MARK: LoginViewDelegate
     
-    func loginButtonTapped(email: String, password: String) {
+    func login(email: String, password: String) {
         NetworkingManager.login(with: email, password: password, completion: { authToken, error in
             if error != nil {
                 let alert = UIAlertController(title: error?.localizedDescription, message: nil, preferredStyle: .alert)
