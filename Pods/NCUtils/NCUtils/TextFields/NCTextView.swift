@@ -39,6 +39,13 @@ open class NCTextView: UITextView, UITextViewDelegate {
         }
     }
     
+    open override var text: String? {
+        didSet {
+            // Setting the placeholder to be hidden if a user presets the text value
+            placeholderLabel.isHidden = true
+        }
+    }
+    
     private var isEmpty: Bool = true {
         didSet {
             placeholderLabel.isHidden = !isEmpty

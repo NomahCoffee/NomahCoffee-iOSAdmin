@@ -41,9 +41,7 @@ class ProductEditorView: UIView {
     var viewModel: ProductEditorViewModel? {
         didSet {
             nameTextField.text = viewModel?.coffee?.name
-            if let price = viewModel?.coffee?.price {
-                priceTextField.text = String(describing: price)
-            }
+            priceTextField.setText(with: viewModel?.coffee?.price ?? 0.0)
             descriptionTextView.text = viewModel?.coffee?.description
             
             // In some cases, the text fields are prefilled (i.e. Edit My User)

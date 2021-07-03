@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NCUtils:
-    :commit: 8a8e1a482ace35e4d53591b4252ddd4a8be0f7c0
+    :commit: 38b79534702300bcb908277534064144d017278b
     :git: https://github.com/NomahCoffee/NCUtils.git
 
 SPEC CHECKSUMS:

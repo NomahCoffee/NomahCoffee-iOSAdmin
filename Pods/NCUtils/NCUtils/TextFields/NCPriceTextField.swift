@@ -18,7 +18,7 @@ public final class NCPriceTextField: NCTextField {
     ///
     /// Examples: `$1.22` -> `1.22`, `$19.95` -> `19.95`
     public var doubleValue: Double = 0.0
-
+    
     // MARK: Init
     
     public override init(frame: CGRect) {
@@ -29,6 +29,20 @@ public final class NCPriceTextField: NCTextField {
     
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: Public Functions
+    
+    /// Preset the value of a price text field.
+    ///
+    /// Use this function when you want to preset a value to be a price. If you were
+    /// to just set the text like `textField.text = "3.0"`, the value of the text field
+    /// will not look like the price value of `$3.00` that is intended. Instead, use
+    /// this function will allow you to set the text with a `Double` value.
+    /// - Parameter price: a `Double` value of the preset dollar amount to be set the text field with
+    public func setText(with price: Double) {
+        self.text = price.usdFormatted
+        doubleValue = price
     }
     
     // MARK: Action Functions
@@ -43,9 +57,25 @@ public final class NCPriceTextField: NCTextField {
 
 }
 
+extension Double {
+    
+    /// A converted `Double` to be shown in US dollar format.
+    ///
+    /// Examples: `122` -> `$1.22`, `1995` -> `19.95`
+    var usdFormatted: String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .currency
+        guard let price = formatter.string(from: self as NSNumber) else { return "0.0" }
+            
+        return price
+    }
+    
+}
+
 extension String {
     
-    /// A converted string to be shown in US dollar format.
+    /// A converted `String` to be shown in US dollar format.
     ///
     /// Examples: `122` -> `$1.22`, `1995` -> `19.95`
     var usdFormatted: String {
