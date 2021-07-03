@@ -9,5 +9,6 @@ target 'NomahCoffee-iOSAdmin' do
   pod 'Alamofire', '~> 5.2'
   pod 'SnapKit', '~> 5.0.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'NCUtils', :git => 'https://github.com/NomahCoffee/NCUtils.git'
 
 end

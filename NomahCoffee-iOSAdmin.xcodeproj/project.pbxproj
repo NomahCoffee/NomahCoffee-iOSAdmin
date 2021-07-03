@@ -17,9 +17,6 @@
 		315B1F572684C966002832DE /* UserEditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F562684C966002832DE /* UserEditorError.swift */; };
 		315B1F592684CA47002832DE /* UserEditorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F582684CA47002832DE /* UserEditorConstants.swift */; };
 		315B1F5F2684CB21002832DE /* UserEditorActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F5E2684CB21002832DE /* UserEditorActionType.swift */; };
-		315B1F622684E650002832DE /* NCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F612684E650002832DE /* NCTextField.swift */; };
-		315B1F642684EA7E002832DE /* NCEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F632684EA7E002832DE /* NCEmailTextField.swift */; };
-		315B1F662684EF99002832DE /* NCPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F652684EF99002832DE /* NCPasswordTextField.swift */; };
 		315B1F6A2684FB1F002832DE /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F692684FB1F002832DE /* ProductListViewController.swift */; };
 		315B1F6C2684FBB6002832DE /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F6B2684FBB6002832DE /* ProductListView.swift */; };
 		315B1F6E2684FC03002832DE /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F6D2684FC03002832DE /* ProductListViewModel.swift */; };
@@ -30,6 +27,15 @@
 		315B1F8226853C4C002832DE /* CoffeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F8126853C4C002832DE /* CoffeeList.swift */; };
 		315B1F8426853C6E002832DE /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F8326853C6E002832DE /* Coffee.swift */; };
 		315B1F8626853C95002832DE /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1F8526853C95002832DE /* CartItem.swift */; };
+		315B1FF326878F4B002832DE /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1FF226878F4B002832DE /* ProductListCell.swift */; };
+		315B1FF8268797A5002832DE /* ProductListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1FF7268797A5002832DE /* ProductListConstants.swift */; };
+		318064FF268B600F00E1B82C /* ProductEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318064FE268B600F00E1B82C /* ProductEditorViewController.swift */; };
+		31806502268B608500E1B82C /* ProductEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806501268B608500E1B82C /* ProductEditorView.swift */; };
+		3180651C268F80D000E1B82C /* ProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180651B268F80D000E1B82C /* ProductProtocol.swift */; };
+		3180651F268F829300E1B82C /* ProductEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180651E268F829300E1B82C /* ProductEditorViewModel.swift */; };
+		31806521268FB82300E1B82C /* ProductEditorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806520268FB82300E1B82C /* ProductEditorConstants.swift */; };
+		31806525268FC13100E1B82C /* ProductEditorActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806524268FC13100E1B82C /* ProductEditorActionType.swift */; };
+		318065272690CF3200E1B82C /* ProductEditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318065262690CF3200E1B82C /* ProductEditorError.swift */; };
 		318957672636178200CA9839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957662636178200CA9839 /* AppDelegate.swift */; };
 		318957692636178200CA9839 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957682636178200CA9839 /* SceneDelegate.swift */; };
 		318957702636178500CA9839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3189576F2636178500CA9839 /* Assets.xcassets */; };
@@ -58,9 +64,6 @@
 		315B1F562684C966002832DE /* UserEditorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorError.swift; sourceTree = "<group>"; };
 		315B1F582684CA47002832DE /* UserEditorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorConstants.swift; sourceTree = "<group>"; };
 		315B1F5E2684CB21002832DE /* UserEditorActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditorActionType.swift; sourceTree = "<group>"; };
-		315B1F612684E650002832DE /* NCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTextField.swift; sourceTree = "<group>"; };
-		315B1F632684EA7E002832DE /* NCEmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCEmailTextField.swift; sourceTree = "<group>"; };
-		315B1F652684EF99002832DE /* NCPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPasswordTextField.swift; sourceTree = "<group>"; };
 		315B1F692684FB1F002832DE /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		315B1F6B2684FBB6002832DE /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		315B1F6D2684FC03002832DE /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
@@ -71,6 +74,15 @@
 		315B1F8126853C4C002832DE /* CoffeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeList.swift; sourceTree = "<group>"; };
 		315B1F8326853C6E002832DE /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		315B1F8526853C95002832DE /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		315B1FF226878F4B002832DE /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		315B1FF7268797A5002832DE /* ProductListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListConstants.swift; sourceTree = "<group>"; };
+		318064FE268B600F00E1B82C /* ProductEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorViewController.swift; sourceTree = "<group>"; };
+		31806501268B608500E1B82C /* ProductEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorView.swift; sourceTree = "<group>"; };
+		3180651B268F80D000E1B82C /* ProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductProtocol.swift; sourceTree = "<group>"; };
+		3180651E268F829300E1B82C /* ProductEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorViewModel.swift; sourceTree = "<group>"; };
+		31806520268FB82300E1B82C /* ProductEditorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorConstants.swift; sourceTree = "<group>"; };
+		31806524268FC13100E1B82C /* ProductEditorActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorActionType.swift; sourceTree = "<group>"; };
+		318065262690CF3200E1B82C /* ProductEditorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorError.swift; sourceTree = "<group>"; };
 		318957632636178200CA9839 /* NomahCoffee-iOSAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NomahCoffee-iOSAdmin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		318957662636178200CA9839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318957682636178200CA9839 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,8 +128,8 @@
 				315B1F4E2684B755002832DE /* UserEditorViewController.swift */,
 				315B1F5A2684CAC8002832DE /* Views */,
 				315B1F5B2684CACF002832DE /* ViewModels */,
-				315B1F5C2684CAE0002832DE /* Models */,
 				315B1F5D2684CAE4002832DE /* Constants */,
+				31806505268BA4FC00E1B82C /* Models */,
 			);
 			path = UserEditor;
 			sourceTree = "<group>";
@@ -138,13 +150,12 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		315B1F5C2684CAE0002832DE /* Models */ = {
+		315B1F5C2684CAE0002832DE /* UserModels */ = {
 			isa = PBXGroup;
 			children = (
-				315B1F562684C966002832DE /* UserEditorError.swift */,
-				315B1F5E2684CB21002832DE /* UserEditorActionType.swift */,
+				315B1F722684FF9A002832DE /* UserType.swift */,
 			);
-			path = Models;
+			path = UserModels;
 			sourceTree = "<group>";
 		};
 		315B1F5D2684CAE4002832DE /* Constants */ = {
@@ -155,23 +166,12 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		315B1F602684E62F002832DE /* NCUtils */ = {
-			isa = PBXGroup;
-			children = (
-				315B1F612684E650002832DE /* NCTextField.swift */,
-				315B1F632684EA7E002832DE /* NCEmailTextField.swift */,
-				315B1F652684EF99002832DE /* NCPasswordTextField.swift */,
-			);
-			path = NCUtils;
-			sourceTree = "<group>";
-		};
 		315B1F672684F96C002832DE /* UserList */ = {
 			isa = PBXGroup;
 			children = (
 				315546CC264B0E8C0009C0D1 /* UserListViewController.swift */,
 				315B1F6F2684FF57002832DE /* Views */,
 				315B1F702684FF62002832DE /* ViewModels */,
-				315B1F712684FF7B002832DE /* Models */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 				315B1F692684FB1F002832DE /* ProductListViewController.swift */,
 				315B1F76268518C0002832DE /* Views */,
 				315B1F77268518CE002832DE /* ViewModels */,
-				315B1F78268518EC002832DE /* Models */,
+				315B1FF626879781002832DE /* Constants */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -203,18 +203,11 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		315B1F712684FF7B002832DE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				315B1F722684FF9A002832DE /* UserType.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		315B1F76268518C0002832DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				315B1F6B2684FBB6002832DE /* ProductListView.swift */,
+				315B1FF226878F4B002832DE /* ProductListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,12 +220,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		315B1F78268518EC002832DE /* Models */ = {
+		315B1F78268518EC002832DE /* ProductModels */ = {
 			isa = PBXGroup;
 			children = (
 				315B1F7926851909002832DE /* ProductType.swift */,
+				3180651B268F80D000E1B82C /* ProductProtocol.swift */,
 			);
-			path = Models;
+			path = ProductModels;
 			sourceTree = "<group>";
 		};
 		315B1F7D26853C1C002832DE /* AppModels */ = {
@@ -245,6 +239,88 @@
 				315B1F8526853C95002832DE /* CartItem.swift */,
 			);
 			path = AppModels;
+			sourceTree = "<group>";
+		};
+		315B1FF626879781002832DE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				315B1FF7268797A5002832DE /* ProductListConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		318064FD268B5FEF00E1B82C /* ProductEditor */ = {
+			isa = PBXGroup;
+			children = (
+				318064FE268B600F00E1B82C /* ProductEditorViewController.swift */,
+				31806500268B607500E1B82C /* Views */,
+				3180651D268F828100E1B82C /* ViewModels */,
+				31806523268FC10F00E1B82C /* Models */,
+				31806522268FB82600E1B82C /* Constants */,
+			);
+			path = ProductEditor;
+			sourceTree = "<group>";
+		};
+		31806500268B607500E1B82C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31806501268B608500E1B82C /* ProductEditorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31806503268BA0C900E1B82C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F682684FAC3002832DE /* ProductList */,
+				318064FD268B5FEF00E1B82C /* ProductEditor */,
+				315B1F78268518EC002832DE /* ProductModels */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		31806504268BA0D100E1B82C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F672684F96C002832DE /* UserList */,
+				315B1F4D2684B731002832DE /* UserEditor */,
+				315B1F5C2684CAE0002832DE /* UserModels */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		31806505268BA4FC00E1B82C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315B1F562684C966002832DE /* UserEditorError.swift */,
+				315B1F5E2684CB21002832DE /* UserEditorActionType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3180651D268F828100E1B82C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3180651E268F829300E1B82C /* ProductEditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31806522268FB82600E1B82C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				31806520268FB82300E1B82C /* ProductEditorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		31806523268FC10F00E1B82C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31806524268FC13100E1B82C /* ProductEditorActionType.swift */,
+				318065262690CF3200E1B82C /* ProductEditorError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3189575A2636178200CA9839 = {
@@ -277,7 +353,6 @@
 				315B1F7D26853C1C002832DE /* AppModels */,
 				3189584B263C3DAA00CA9839 /* Login */,
 				31895847263C3D4300CA9839 /* Menu */,
-				315B1F602684E62F002832DE /* NCUtils */,
 			);
 			path = "NomahCoffee-iOSAdmin";
 			sourceTree = "<group>";
@@ -286,9 +361,8 @@
 			isa = PBXGroup;
 			children = (
 				3189586A263CAD2F00CA9839 /* MainMenu */,
-				315B1F4D2684B731002832DE /* UserEditor */,
-				315B1F672684F96C002832DE /* UserList */,
-				315B1F682684FAC3002832DE /* ProductList */,
+				31806504268BA0D100E1B82C /* User */,
+				31806503268BA0C900E1B82C /* Product */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -500,26 +574,31 @@
 				315B1F6A2684FB1F002832DE /* ProductListViewController.swift in Sources */,
 				315B1F4C2683E7C9002832DE /* UserListViewModel.swift in Sources */,
 				315B1F7A26851909002832DE /* ProductType.swift in Sources */,
+				31806525268FC13100E1B82C /* ProductEditorActionType.swift in Sources */,
 				315B1F592684CA47002832DE /* UserEditorConstants.swift in Sources */,
 				318957E826383A0500CA9839 /* LoginViewController.swift in Sources */,
 				31895863263CA85200CA9839 /* LoginError.swift in Sources */,
 				315B1F7F26853C2D002832DE /* UserList.swift in Sources */,
+				31806521268FB82300E1B82C /* ProductEditorConstants.swift in Sources */,
 				3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */,
 				315546CD264B0E8C0009C0D1 /* UserListViewController.swift in Sources */,
 				315B1F8626853C95002832DE /* CartItem.swift in Sources */,
+				318064FF268B600F00E1B82C /* ProductEditorViewController.swift in Sources */,
 				315B1F4F2684B755002832DE /* UserEditorViewController.swift in Sources */,
+				3180651C268F80D000E1B82C /* ProductProtocol.swift in Sources */,
 				315B1F5F2684CB21002832DE /* UserEditorActionType.swift in Sources */,
-				315B1F642684EA7E002832DE /* NCEmailTextField.swift in Sources */,
 				315B1F8226853C4C002832DE /* CoffeeList.swift in Sources */,
-				315B1F622684E650002832DE /* NCTextField.swift in Sources */,
 				315B1F4A2683E79D002832DE /* UserListView.swift in Sources */,
 				315B1F6E2684FC03002832DE /* ProductListViewModel.swift in Sources */,
+				315B1FF326878F4B002832DE /* ProductListCell.swift in Sources */,
 				315B1F572684C966002832DE /* UserEditorError.swift in Sources */,
 				3189578E26361AA300CA9839 /* MenuOption.swift in Sources */,
 				31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */,
 				31895841263A228C00CA9839 /* MenuView.swift in Sources */,
+				315B1FF8268797A5002832DE /* ProductListConstants.swift in Sources */,
 				315B1F8426853C6E002832DE /* Coffee.swift in Sources */,
-				315B1F662684EF99002832DE /* NCPasswordTextField.swift in Sources */,
+				318065272690CF3200E1B82C /* ProductEditorError.swift in Sources */,
+				31806502268B608500E1B82C /* ProductEditorView.swift in Sources */,
 				315B1F552684B8CE002832DE /* UserEditorViewModel.swift in Sources */,
 				3189579C263704F600CA9839 /* NetworkingManager.swift in Sources */,
 				315545372647F8110009C0D1 /* User.swift in Sources */,
@@ -527,6 +606,7 @@
 				315B1F7526851223002832DE /* MenuConstants.swift in Sources */,
 				318957672636178200CA9839 /* AppDelegate.swift in Sources */,
 				31895854263C3F0800CA9839 /* LoginView.swift in Sources */,
+				3180651F268F829300E1B82C /* ProductEditorViewModel.swift in Sources */,
 				318957692636178200CA9839 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

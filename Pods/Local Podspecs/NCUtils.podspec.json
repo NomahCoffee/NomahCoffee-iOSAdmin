@@ -1,0 +1,30 @@
+{
+  "name": "NCUtils",
+  "version": "1.0",
+  "summary": "A utility framework for all Nomah Coffee iOS host applications.",
+  "description": "This library is an all-in-one utility library for any Nomah Coffee iOS applications. \nIt will help to similar work used across the board in one spot.",
+  "homepage": "https://github.com/NomahCoffee/NCUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Caleb Rudnicki": "calebrudnicki@gmail.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/NomahCoffee/NCUtils.git",
+    "tag": "1.0"
+  },
+  "source_files": "NCUtils/**/*.{h,m,swift}",
+  "subspecs": [
+    {
+      "name": "TextFields",
+      "source_files": "NCUtils/TextFields/**/*.swift"
+    }
+  ],
+  "swift_version": "5.0"
+}

@@ -309,4 +309,69 @@ public class NetworkingManager {
         }
     }
     
+    /// Create a brand new coffee object
+    /// - Parameters:
+    ///   - name: the `String` value for the name of the coffee
+    ///   - price: the `Double` value representing the price of the coffee
+    ///   - description: the `String` value detailing a description of the coffee
+    ///   - inStock: the `Bool` value as to whether or not the coffee is in stock
+    ///   - completion: a completion of type `Error?` which will send back an error in the case
+    ///   of a failure or `nil` in the case of a successful coffee creation.
+    static func createCoffee(name: String, price: Double, description: String, inStock: Bool, completion: @escaping (Error?) -> Void) {
+        guard let authToken = UserDefaults().string(forKey: "authToken") else {
+            completion(NSError(domain: "Unable to find an auth token", code: 0, userInfo: nil))
+            return
+        }
+        
+        AF.request(
+            "\(domain)/api/coffee/",
+            method: .post,
+            parameters: ["name": name,
+                         "price": price,
+                         "description": description,
+                         "in_stock": inStock],
+            headers: getHeaders(with: authToken)
+            ).responseJSON { response in
+                switch response.result {
+                case .success(_):
+                    completion(nil)
+                case .failure(let error):
+                    completion(error)
+                }
+            }
+    }
+    
+    /// Edit an existing coffee object
+    /// - Parameters:
+    ///   - id: the `String` representation of the coffee's id
+    ///   - name: a `String` for the updated name of the coffee
+    ///   - price: a `Double` for the updated price of the coffee
+    ///   - description: a `String` for the updated description of the coffee
+    ///   - inStock: a `Bool` for the updated status of whether or not the coffee is in stock
+    ///   - completion: a completion of type `Error?` which will send back an error in the case
+    ///   of a failure or `nil` in the case of a successful coffee edit.
+    static func editCoffee(id: Int, name: String, price: Double, description: String, inStock: Bool, completion: @escaping (Error?) -> Void) {
+        guard let authToken = UserDefaults().string(forKey: "authToken") else {
+            completion(NSError(domain: "Unable to find an auth token", code: 0, userInfo: nil))
+            return
+        }
+        
+        AF.request(
+            "\(domain)/api/coffee/\(id)/",
+            method: .put,
+            parameters: ["name": name,
+                         "price": price,
+                         "description": description,
+                         "in_stock": inStock],
+            headers: getHeaders(with: authToken)
+            ).responseJSON { response in
+                switch response.result {
+                case .success(_):
+                    completion(nil)
+                case .failure(let error):
+                    completion(error)
+                }
+            }
+    }
+    
 }

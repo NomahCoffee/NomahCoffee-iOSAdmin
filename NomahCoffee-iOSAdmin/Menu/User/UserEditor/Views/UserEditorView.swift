@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import NCUtils
 
 protocol UserEditorViewDelegate {
     /// Trigger the creation of a new superuser
@@ -47,10 +48,10 @@ class UserEditorView: UIView {
             
             // In some cases, the text fields are prefilled (i.e. Edit My User)
             // so we need to check the fulfilled status of the text fields
-            emailTextField.updateFulfilledStatus()
-            usernameTextField.updateFulfilledStatus()
-            firstNameTextField.updateFulfilledStatus()
-            lastNameTextField.updateFulfilledStatus()
+            emailTextField.isFulfilled = true
+            usernameTextField.isFulfilled = true
+            firstNameTextField.isFulfilled = true
+            lastNameTextField.isFulfilled = true
         }
     }
     

@@ -12,9 +12,16 @@ enum ProductType {
     case coffee
     
     /// The navigation bar title
-    var navigationTitle: String {
+    var listNavigationTitle: String {
         switch self {
         case .coffee: return "Coffee"
+        }
+    }
+    
+    /// The navigation bar title
+    var editorNavigationTitle: String {
+        switch self {
+        case .coffee: return "Create Coffee"
         }
     }
     
