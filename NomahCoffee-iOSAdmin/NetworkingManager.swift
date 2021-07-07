@@ -31,57 +31,6 @@ public class NetworkingManager {
     
     // MARK: Static Functions
     
-    /// Login an existing superuser into the admin app which essentially creates a new auth token
-    /// - Parameters:
-    ///   - email: a `String` for the user's email address
-    ///   - password: a `String` for the user's password
-    ///   - completion: a completion of type `(String?, Error?)` which will send back
-    ///   an auth token along with a nil value in the case of a success or a nil value
-    ///   along with an error in the case of a failure
-    static func login(with email: String, password: String, completion: @escaping (String?, Error?) -> Void) {
-        AF.request(
-            "\(domain)/auth/token/login/",
-            method: .post,
-            parameters: ["email": email,
-                         "password": password]
-        ).responseJSON { response in
-            switch response.result {
-            case .success(let data):
-                let json = JSON(data)
-                if json["auth_token"].exists() {
-                    completion(json["auth_token"].stringValue, nil)
-                } else {
-                    completion(nil, NSError(domain: "Unable to log in with provided credentials.", code: 0, userInfo: nil))
-                }
-            case .failure(let error):
-                completion(nil, error)
-            }
-        }
-    }
-    
-    /// Logout a superuser from the admin app which essentially destroys the auth token
-    /// - Parameter completion: a completion of type `Error?` which will send back `nil` in the
-    /// case of a successful logout and an error in the case of a failed attempt
-    static func logout(completion: @escaping (Error?) -> Void) {
-        guard let authToken = UserDefaults().string(forKey: "authToken") else {
-            completion(NSError(domain: "Unable to find an auth token", code: 0, userInfo: nil))
-            return
-        }
-        
-        AF.request(
-            "\(domain)/auth/token/logout/",
-            method: .post,
-            headers: getHeaders(with: authToken)
-        ).responseJSON { response in
-            switch response.result {
-            case .success(_):
-                completion(nil)
-            case .failure(let error):
-                completion(error)
-            }
-        }
-    }
-    
     /// Get the information of the current superuser logged into the admin app
     /// - Parameter completion: a completion of type `User?` which will send back the user object in
     /// in the case of a successful request and `nil` in the case of a failure

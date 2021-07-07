@@ -19,13 +19,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        if UserDefaults().string(forKey: "authToken") != nil && UserDefaults().string(forKey: "authToken") != "" {
-            window.rootViewController = UINavigationController(rootViewController: MenuViewController())
-        } else {
-            window.rootViewController = LoginViewController()
-        }
-        window.makeKeyAndVisible()
-        self.window = window
+        AuthKitManager.shared.homeViewController = UINavigationController(rootViewController: MenuViewController())
+        AuthKitManager.shared.membershipOption = .loginOnly
+        AuthKitManager.shared.onlySuperuser = true
+        AuthKitManager.shared.startSession(from: window, completion: { showMembershipScreen in
+            window.makeKeyAndVisible()
+            self.window = window
+            
+            if let rootViewController = window.rootViewController, showMembershipScreen {
+                AuthKitManager.shared.presentDefaultViewController(from: rootViewController, animated: false)
+            }
+        })
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
