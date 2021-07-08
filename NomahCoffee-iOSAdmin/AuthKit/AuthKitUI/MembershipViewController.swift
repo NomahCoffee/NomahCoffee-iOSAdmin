@@ -108,7 +108,7 @@ final class MembershipViewController: UIViewController, LoginViewDelegate, Signu
     }
     
     func errorFound(_ error: MembershipError) {
-        let alert = UIAlertController(title: error.errorTitle, message: error.errorMessage, preferredStyle: .alert)
+        let alert = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
         present(alert, animated: true, completion: nil)
     }

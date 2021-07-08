@@ -1,38 +1,31 @@
 PODS:
   - Alamofire (5.4.3)
-  - NCUtils (1.0):
-    - NCUtils/TextFields (= 1.0)
-  - NCUtils/TextFields (1.0)
+  - NCUtils (1.1):
+    - NCUtils/TextFields (= 1.1)
+  - NCUtils/TextFields (1.1)
   - SnapKit (5.0.1)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
-  - NCUtils (from `https://github.com/NomahCoffee/NCUtils.git`)
+  - NCUtils
   - SnapKit (~> 5.0.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
+  https://github.com/NomahCoffee/NCPodspec.git:
+    - NCUtils
   trunk:
     - Alamofire
     - SnapKit
     - SwiftyJSON
 
-EXTERNAL SOURCES:
-  NCUtils:
-    :git: https://github.com/NomahCoffee/NCUtils.git
-
-CHECKOUT OPTIONS:
-  NCUtils:
-    :commit: 38b79534702300bcb908277534064144d017278b
-    :git: https://github.com/NomahCoffee/NCUtils.git
-
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  NCUtils: 2d4e3cb2f93616e622d12b848dbbd84d563eb66c
+  NCUtils: 907a49b6fc8ea414022ab350f1fd3bf5a209e104
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 880d643a68ef2a001ec33e1eb15446c7d1846c2e
+PODFILE CHECKSUM: efaf1c94d2f0c2eb02f2b41155ccc3a72f983cd2
 
 COCOAPODS: 1.10.1
