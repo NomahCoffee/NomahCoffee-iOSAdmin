@@ -1,14 +1,14 @@
 //
 //  MembershipViewController.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
-//  Created by Caleb Rudnicki on 4/27/21.
+//  Created by Caleb Rudnicki on 7/7/21.
 //
 
 import UIKit
 import SnapKit
 
-final class MembershipViewController: UIViewController, LoginViewDelegate, SignupViewDelegate {
+class MembershipViewController: UIViewController, LoginViewDelegate, SignupViewDelegate {
     
     // MARK: Properties
     

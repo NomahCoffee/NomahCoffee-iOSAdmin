@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AuthKit
 
 final class MenuViewController: UIViewController, MenuViewDelegate {
     

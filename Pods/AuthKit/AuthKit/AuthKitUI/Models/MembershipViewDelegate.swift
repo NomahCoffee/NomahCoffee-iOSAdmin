@@ -1,6 +1,6 @@
 //
 //  MembershipViewDelegate.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
 //  Created by Caleb Rudnicki on 7/7/21.
 //

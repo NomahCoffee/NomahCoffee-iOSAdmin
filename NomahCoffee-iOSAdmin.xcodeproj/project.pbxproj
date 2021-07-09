@@ -36,13 +36,6 @@
 		31806521268FB82300E1B82C /* ProductEditorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806520268FB82300E1B82C /* ProductEditorConstants.swift */; };
 		31806525268FC13100E1B82C /* ProductEditorActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806524268FC13100E1B82C /* ProductEditorActionType.swift */; };
 		318065272690CF3200E1B82C /* ProductEditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318065262690CF3200E1B82C /* ProductEditorError.swift */; };
-		3180652E2690EAFB00E1B82C /* AuthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180652D2690EAFB00E1B82C /* AuthKitManager.swift */; };
-		318065322690ECB900E1B82C /* AuthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318065312690ECB900E1B82C /* AuthKitService.swift */; };
-		318065382694D11A00E1B82C /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318065372694D11A00E1B82C /* SignupView.swift */; };
-		318065402695EAD600E1B82C /* MembershipViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180653F2695EAD600E1B82C /* MembershipViewDelegate.swift */; };
-		31806542269610CF00E1B82C /* AuthKitMembershipOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806541269610CF00E1B82C /* AuthKitMembershipOption.swift */; };
-		3180654426961A3500E1B82C /* AuthKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180654326961A3500E1B82C /* AuthKitUser.swift */; };
-		3180654826961CA600E1B82C /* AuthKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180654726961CA600E1B82C /* AuthKitError.swift */; };
 		318957672636178200CA9839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957662636178200CA9839 /* AppDelegate.swift */; };
 		318957692636178200CA9839 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957682636178200CA9839 /* SceneDelegate.swift */; };
 		318957702636178500CA9839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3189576F2636178500CA9839 /* Assets.xcassets */; };
@@ -50,12 +43,8 @@
 		3189578E26361AA300CA9839 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189578D26361AA300CA9839 /* MenuOption.swift */; };
 		3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579526361BC400CA9839 /* MenuTableViewModel.swift */; };
 		3189579C263704F600CA9839 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189579B263704F600CA9839 /* NetworkingManager.swift */; };
-		318957E826383A0500CA9839 /* MembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318957E726383A0500CA9839 /* MembershipViewController.swift */; };
 		31895841263A228C00CA9839 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895840263A228C00CA9839 /* MenuView.swift */; };
 		31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895843263C3CD500CA9839 /* MenuViewController.swift */; };
-		31895854263C3F0800CA9839 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895853263C3F0800CA9839 /* LoginView.swift */; };
-		3189585B263C55F700CA9839 /* MembershipConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189585A263C55F600CA9839 /* MembershipConstants.swift */; };
-		31895863263CA85200CA9839 /* MembershipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31895862263CA85200CA9839 /* MembershipError.swift */; };
 		A5C6779D5C01E7F172C4AC37 /* Pods_NomahCoffee_iOSAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,13 +79,6 @@
 		31806520268FB82300E1B82C /* ProductEditorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorConstants.swift; sourceTree = "<group>"; };
 		31806524268FC13100E1B82C /* ProductEditorActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorActionType.swift; sourceTree = "<group>"; };
 		318065262690CF3200E1B82C /* ProductEditorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditorError.swift; sourceTree = "<group>"; };
-		3180652D2690EAFB00E1B82C /* AuthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKitManager.swift; sourceTree = "<group>"; };
-		318065312690ECB900E1B82C /* AuthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKitService.swift; sourceTree = "<group>"; };
-		318065372694D11A00E1B82C /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		3180653F2695EAD600E1B82C /* MembershipViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipViewDelegate.swift; sourceTree = "<group>"; };
-		31806541269610CF00E1B82C /* AuthKitMembershipOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKitMembershipOption.swift; sourceTree = "<group>"; };
-		3180654326961A3500E1B82C /* AuthKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKitUser.swift; sourceTree = "<group>"; };
-		3180654726961CA600E1B82C /* AuthKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKitError.swift; sourceTree = "<group>"; };
 		318957632636178200CA9839 /* NomahCoffee-iOSAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NomahCoffee-iOSAdmin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		318957662636178200CA9839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318957682636178200CA9839 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,12 +88,8 @@
 		3189578D26361AA300CA9839 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		3189579526361BC400CA9839 /* MenuTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewModel.swift; sourceTree = "<group>"; };
 		3189579B263704F600CA9839 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		318957E726383A0500CA9839 /* MembershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipViewController.swift; sourceTree = "<group>"; };
 		31895840263A228C00CA9839 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		31895843263C3CD500CA9839 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		31895853263C3F0800CA9839 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		3189585A263C55F600CA9839 /* MembershipConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipConstants.swift; sourceTree = "<group>"; };
-		31895862263CA85200CA9839 /* MembershipError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipError.swift; sourceTree = "<group>"; };
 		8F3E5A750ECD923A09856A8E /* Pods_NomahCoffee_iOSAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomahCoffee_iOSAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE58CF0B00053A03AFBC05E /* Pods-NomahCoffee-iOSAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomahCoffee-iOSAdmin.debug.xcconfig"; path = "Target Support Files/Pods-NomahCoffee-iOSAdmin/Pods-NomahCoffee-iOSAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,54 +315,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		318065282690EAC000E1B82C /* AuthKit */ = {
-			isa = PBXGroup;
-			children = (
-				318065292690EAC600E1B82C /* AuthKitAPI */,
-				3180652A2690EAD100E1B82C /* AuthKitUI */,
-			);
-			path = AuthKit;
-			sourceTree = "<group>";
-		};
-		318065292690EAC600E1B82C /* AuthKitAPI */ = {
-			isa = PBXGroup;
-			children = (
-				3180652D2690EAFB00E1B82C /* AuthKitManager.swift */,
-				318065302690EC9800E1B82C /* API */,
-				318065332690ECCC00E1B82C /* Models */,
-			);
-			path = AuthKitAPI;
-			sourceTree = "<group>";
-		};
-		3180652A2690EAD100E1B82C /* AuthKitUI */ = {
-			isa = PBXGroup;
-			children = (
-				318957E726383A0500CA9839 /* MembershipViewController.swift */,
-				3189584F263C3E9F00CA9839 /* Views */,
-				31895851263C3EAF00CA9839 /* Models */,
-				31895852263C3EB700CA9839 /* Constants */,
-			);
-			path = AuthKitUI;
-			sourceTree = "<group>";
-		};
-		318065302690EC9800E1B82C /* API */ = {
-			isa = PBXGroup;
-			children = (
-				318065312690ECB900E1B82C /* AuthKitService.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		318065332690ECCC00E1B82C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				31806541269610CF00E1B82C /* AuthKitMembershipOption.swift */,
-				3180654726961CA600E1B82C /* AuthKitError.swift */,
-				3180654326961A3500E1B82C /* AuthKitUser.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		3189575A2636178200CA9839 = {
 			isa = PBXGroup;
 			children = (
@@ -406,7 +336,6 @@
 		318957652636178200CA9839 /* NomahCoffee-iOSAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				318065282690EAC000E1B82C /* AuthKit */,
 				318957662636178200CA9839 /* AppDelegate.swift */,
 				318957682636178200CA9839 /* SceneDelegate.swift */,
 				3189576F2636178500CA9839 /* Assets.xcassets */,
@@ -459,32 +388,6 @@
 				3189579526361BC400CA9839 /* MenuTableViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		3189584F263C3E9F00CA9839 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				31895853263C3F0800CA9839 /* LoginView.swift */,
-				318065372694D11A00E1B82C /* SignupView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		31895851263C3EAF00CA9839 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3180653F2695EAD600E1B82C /* MembershipViewDelegate.swift */,
-				31895862263CA85200CA9839 /* MembershipError.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		31895852263C3EB700CA9839 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				3189585A263C55F600CA9839 /* MembershipConstants.swift */,
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		3189586A263CAD2F00CA9839 /* MainMenu */ = {
@@ -622,20 +525,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				315B1F512684B7B5002832DE /* UserEditorView.swift in Sources */,
-				3189585B263C55F700CA9839 /* MembershipConstants.swift in Sources */,
 				315B1F732684FF9A002832DE /* UserType.swift in Sources */,
 				315B1F6A2684FB1F002832DE /* ProductListViewController.swift in Sources */,
 				315B1F4C2683E7C9002832DE /* UserListViewModel.swift in Sources */,
 				315B1F7A26851909002832DE /* ProductType.swift in Sources */,
-				3180654426961A3500E1B82C /* AuthKitUser.swift in Sources */,
 				31806525268FC13100E1B82C /* ProductEditorActionType.swift in Sources */,
 				315B1F592684CA47002832DE /* UserEditorConstants.swift in Sources */,
-				318065382694D11A00E1B82C /* SignupView.swift in Sources */,
-				318957E826383A0500CA9839 /* MembershipViewController.swift in Sources */,
-				31895863263CA85200CA9839 /* MembershipError.swift in Sources */,
 				315B1F7F26853C2D002832DE /* UserList.swift in Sources */,
 				31806521268FB82300E1B82C /* ProductEditorConstants.swift in Sources */,
-				3180652E2690EAFB00E1B82C /* AuthKitManager.swift in Sources */,
 				3189579626361BC400CA9839 /* MenuTableViewModel.swift in Sources */,
 				315546CD264B0E8C0009C0D1 /* UserListViewController.swift in Sources */,
 				315B1F8626853C95002832DE /* CartItem.swift in Sources */,
@@ -645,7 +542,6 @@
 				315B1F5F2684CB21002832DE /* UserEditorActionType.swift in Sources */,
 				315B1F8226853C4C002832DE /* CoffeeList.swift in Sources */,
 				315B1F4A2683E79D002832DE /* UserListView.swift in Sources */,
-				3180654826961CA600E1B82C /* AuthKitError.swift in Sources */,
 				315B1F6E2684FC03002832DE /* ProductListViewModel.swift in Sources */,
 				315B1FF326878F4B002832DE /* ProductListCell.swift in Sources */,
 				315B1F572684C966002832DE /* UserEditorError.swift in Sources */,
@@ -653,7 +549,6 @@
 				31895844263C3CD500CA9839 /* MenuViewController.swift in Sources */,
 				31895841263A228C00CA9839 /* MenuView.swift in Sources */,
 				315B1FF8268797A5002832DE /* ProductListConstants.swift in Sources */,
-				318065322690ECB900E1B82C /* AuthKitService.swift in Sources */,
 				315B1F8426853C6E002832DE /* Coffee.swift in Sources */,
 				318065272690CF3200E1B82C /* ProductEditorError.swift in Sources */,
 				31806502268B608500E1B82C /* ProductEditorView.swift in Sources */,
@@ -663,10 +558,7 @@
 				315B1F6C2684FBB6002832DE /* ProductListView.swift in Sources */,
 				315B1F7526851223002832DE /* MenuConstants.swift in Sources */,
 				318957672636178200CA9839 /* AppDelegate.swift in Sources */,
-				31895854263C3F0800CA9839 /* LoginView.swift in Sources */,
 				3180651F268F829300E1B82C /* ProductEditorViewModel.swift in Sources */,
-				318065402695EAD600E1B82C /* MembershipViewDelegate.swift in Sources */,
-				31806542269610CF00E1B82C /* AuthKitMembershipOption.swift in Sources */,
 				318957692636178200CA9839 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,6 +702,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92DETN2MKQ;
 				INFOPLIST_FILE = "NomahCoffee-iOSAdmin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,6 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92DETN2MKQ;
 				INFOPLIST_FILE = "NomahCoffee-iOSAdmin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

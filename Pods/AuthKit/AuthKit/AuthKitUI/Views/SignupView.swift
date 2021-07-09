@@ -1,11 +1,12 @@
 //
 //  SignupView.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
-//  Created by Caleb Rudnicki on 7/6/21.
+//  Created by Caleb Rudnicki on 7/7/21.
 //
 
 import UIKit
+import SnapKit
 import NCUtils
 
 protocol SignupViewDelegate: MembershipViewDelegate {
@@ -21,7 +22,7 @@ protocol SignupViewDelegate: MembershipViewDelegate {
                 lastName: String, password: String, repassword: String)
 }
 
-final class SignupView: UIView {
+class SignupView: UIView {
     
     var delegate: SignupViewDelegate?
 

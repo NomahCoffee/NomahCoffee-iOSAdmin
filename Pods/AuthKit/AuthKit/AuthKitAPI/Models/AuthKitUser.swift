@@ -1,6 +1,6 @@
 //
 //  AuthKitUser.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
 //  Created by Caleb Rudnicki on 7/7/21.
 //
@@ -8,9 +8,7 @@
 import Foundation
 
 struct AuthKitUserList: Codable {
-    
     let results: [AuthKitUser]
-    
 }
 
 struct AuthKitUser: Codable {

@@ -1,8 +1,8 @@
 //
 //  AuthKitService.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
-//  Created by Caleb Rudnicki on 7/3/21.
+//  Created by Caleb Rudnicki on 7/7/21.
 //
 
 import Foundation

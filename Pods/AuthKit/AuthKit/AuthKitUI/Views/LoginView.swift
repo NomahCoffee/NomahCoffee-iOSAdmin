@@ -1,8 +1,8 @@
 //
 //  LoginView.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
-//  Created by Caleb Rudnicki on 4/30/21.
+//  Created by Caleb Rudnicki on 7/7/21.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ protocol LoginViewDelegate: MembershipViewDelegate {
     func login(email: String, password: String)
 }
 
-final class LoginView: UIView {
+class LoginView: UIView {
     
     // MARK: Properties
     
@@ -98,7 +98,7 @@ final class LoginView: UIView {
     
     // MARK: Actions
     
-    @objc private func loginButtonTapped() {        
+    @objc private func loginButtonTapped() {
         if emailTextField.isFulfilled,
            passwordTextField.isFulfilled,
            let email = emailTextField.text,
@@ -114,3 +114,4 @@ final class LoginView: UIView {
     }
     
 }
+
