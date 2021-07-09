@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AuthKit
 
 final class MenuViewController: UIViewController, MenuViewDelegate {
     
@@ -59,17 +60,7 @@ final class MenuViewController: UIViewController, MenuViewDelegate {
     // MARK: Actions
     
     @objc func logoutButtonTapped() {
-        NetworkingManager.logout { error in
-            if error != nil {
-                // Present error to user
-                print(error?.localizedDescription)
-            }
-            
-            UserDefaults().removeObject(forKey: "authToken")
-            let loginViewController = LoginViewController()
-            loginViewController.modalPresentationStyle = .fullScreen
-            self.present(loginViewController, animated: true, completion: nil)
-        }
+        AuthKitManager.shared.logout(from: self)
     }
     
     // MARK: MenuViewDelegate

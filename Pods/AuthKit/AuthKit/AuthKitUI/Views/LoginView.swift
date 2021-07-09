@@ -1,24 +1,20 @@
 //
 //  LoginView.swift
-//  NomahCoffee-iOSAdmin
+//  AuthKit
 //
-//  Created by Caleb Rudnicki on 4/30/21.
+//  Created by Caleb Rudnicki on 7/7/21.
 //
 
 import UIKit
 import SnapKit
 import NCUtils
 
-protocol LoginViewDelegate {
+protocol LoginViewDelegate: MembershipViewDelegate {
     /// Trigger a login action
     /// - Parameters:
     ///   - email: a `String` for the user's email
     ///   - password: a `String` for the user's password
     func login(email: String, password: String)
-    
-    /// Trigger an error message
-    /// - Parameter error: a `LoginError` object representing the specific error to trigger
-    func errorFound(_ error: LoginError)
 }
 
 class LoginView: UIView {
@@ -29,25 +25,33 @@ class LoginView: UIView {
     
     private let titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.text = LoginConstants.titleLabelTitle
+        titleLabel.text = MembershipConstants.Login.headerTitle
         return titleLabel
     }()
     
     private let emailTextField: NCEmailTextField = {
         let emailTextField = NCEmailTextField()
-        emailTextField.placeholder = LoginConstants.emailTextFieldPlaceholder
+        emailTextField.placeholder = MembershipConstants.Login.emailTextFieldPlaceholder
         return emailTextField
     }()
     
     private let passwordTextField: NCPasswordTextField = {
         let passwordTextField = NCPasswordTextField()
-        passwordTextField.placeholder = LoginConstants.passwordTextFieldPlaceholder
+        passwordTextField.placeholder = MembershipConstants.Login.passwordTextFieldPlaceholder
         return passwordTextField
+    }()
+    
+    private let goToSignupButton: UIButton = {
+        let goToSignupButton = UIButton()
+        goToSignupButton.setTitle(MembershipConstants.Login.toggleButtonTitle, for: .normal)
+        goToSignupButton.setTitleColor(.label, for: .normal)
+        goToSignupButton.addTarget(self, action: #selector(goToSignupButtonTapped), for: .touchUpInside)
+        return goToSignupButton
     }()
     
     private let loginButton: UIButton = {
         let loginButton = UIButton()
-        loginButton.setTitle(LoginConstants.loginButtonTitle, for: .normal)
+        loginButton.setTitle(MembershipConstants.Login.submitButtonTitle, for: .normal)
         loginButton.setTitleColor(.label, for: .normal)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         loginButton.backgroundColor = .systemGreen
@@ -57,7 +61,7 @@ class LoginView: UIView {
     private let stack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.spacing = LoginConstants.stackSpacing
+        stack.spacing = MembershipConstants.stackSpacing
         return stack
     }()
     
@@ -69,20 +73,23 @@ class LoginView: UIView {
         stack.addArrangedSubview(titleLabel)
         stack.addArrangedSubview(emailTextField)
         stack.addArrangedSubview(passwordTextField)
+        stack.addArrangedSubview(goToSignupButton)
 
         addSubview(stack)
         addSubview(loginButton)
         
         stack.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.trailing.equalToSuperview().inset(LoginConstants.stackHorizontalInset)
+            make.leading.trailing.equalToSuperview().inset(MembershipConstants.stackHorizontalInset)
         }
         
         loginButton.snp.makeConstraints { make in
             make.top.greaterThanOrEqualTo(stack.snp.bottom)
             make.leading.trailing.bottom.equalToSuperview()
-            make.height.equalTo(LoginConstants.loginButtonHeight)
+            make.height.equalTo(MembershipConstants.submitButtonHeight)
         }
+        
+        goToSignupButton.isHidden = AuthKitManager.shared.membershipOption == .loginOnly ? true : false
     }
     
     required init?(coder: NSCoder) {
@@ -91,7 +98,7 @@ class LoginView: UIView {
     
     // MARK: Actions
     
-    @objc private func loginButtonTapped() {        
+    @objc private func loginButtonTapped() {
         if emailTextField.isFulfilled,
            passwordTextField.isFulfilled,
            let email = emailTextField.text,
@@ -102,12 +109,9 @@ class LoginView: UIView {
         }
     }
     
-    // MARK: Public Functions
-    
-    /// Clear all text fields associated with the login view
-    public func clearTextFields() {
-        emailTextField.text = nil
-        passwordTextField.text = nil
+    @objc private func goToSignupButtonTapped() {
+        delegate?.toggleMembershipView(toShowLogin: false)
     }
     
 }
+

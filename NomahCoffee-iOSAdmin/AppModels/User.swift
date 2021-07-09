@@ -27,7 +27,7 @@ struct User: Codable {
         lastName = try values.decode(String.self, forKey: .lastName)
         isSuperuser = try values.decode(Bool.self, forKey: .isSuperuser)
         isStaff = try values.decode(Bool.self, forKey: .isStaff)
-//        cart = try values.decode([CartItem].self, forKey: .cart)
+        cart = try values.decode([CartItem].self, forKey: .cart)
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -39,7 +39,7 @@ struct User: Codable {
         try container.encode(lastName, forKey: .lastName)
         try container.encode(isSuperuser, forKey: .isSuperuser)
         try container.encode(isStaff, forKey: .isStaff)
-//        try container.encode(cart, forKey: .cart)
+        try container.encode(cart, forKey: .cart)
     }
     
     enum CodingKeys: String, CodingKey {
@@ -50,7 +50,7 @@ struct User: Codable {
         case lastName = "last_name"
         case isSuperuser = "is_superuser"
         case isStaff = "is_staff"
-//        case cart
+        case cart
     }
     
 }
@@ -64,7 +64,7 @@ public struct CurrentUser: Codable {
     var lastName: String
     var isSuperuser: Bool
     var isStaff: Bool
-//    var cart: [CartItem]
+    var cart: [CartItem]
     
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -75,7 +75,7 @@ public struct CurrentUser: Codable {
         lastName = try values.decode(String.self, forKey: .lastName)
         isSuperuser = try values.decode(Bool.self, forKey: .isSuperuser)
         isStaff = try values.decode(Bool.self, forKey: .isStaff)
-//        cart = try values.decode([CartItem].self, forKey: .cart)
+        cart = try values.decode([CartItem].self, forKey: .cart)
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -87,7 +87,7 @@ public struct CurrentUser: Codable {
         try container.encode(lastName, forKey: .lastName)
         try container.encode(isSuperuser, forKey: .isSuperuser)
         try container.encode(isStaff, forKey: .isStaff)
-//        try container.encode(cart, forKey: .cart)
+        try container.encode(cart, forKey: .cart)
     }
     
     enum CodingKeys: String, CodingKey {
@@ -98,7 +98,7 @@ public struct CurrentUser: Codable {
         case lastName = "last_name"
         case isSuperuser = "is_superuser"
         case isStaff = "is_staff"
-//        case cart
+        case cart
     }
     
 }
